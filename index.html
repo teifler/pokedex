@@ -9,8 +9,32 @@
     <title>Document</title>
   </head>
   <body>
+    <h1>PokeDex</h1>
+    <form class="filterForm" data-js="filterForm" action="">
+      <label class="label" for="filterPokemonList">
+        <input
+          type="text"
+          data-js="inputField"
+          id="filterPokemonList"
+          placeholder="Pokemon Name"
+        />
+        <label>
+          <input type="radio" name="filterPokemonList" value="name" checked />
+          Filter Name
+        </label>
+        <label>
+          <input type="radio" name="filterPokemonList" value="id" /> Filter ID
+        </label>
+        <label>
+          <input type="radio" name="filterPokemonList" value="type" /> Filter
+          Type
+        </label>
+      </label>
+    </form>
+    <ul [role="list]" class="pokemonContainer" data-js="pokemonContainer"></ul>
+    <!--
     <button data-js="Button" class="Button">
       Click me and go to the console.
     </button>
-  </body>
+  --></body>
 </html>
